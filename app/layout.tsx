@@ -23,7 +23,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className} `} style={gradientStyle}>
+      <body className={`${inter.className} bg-[#0F172A]`} style={gradientStyle}>
         {children}
       </body>
     </html>
