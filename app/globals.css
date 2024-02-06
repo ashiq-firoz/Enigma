@@ -43,4 +43,20 @@ body {
   background:
         #0F172A;
 }
+.hero-bg {
+  background-image: url("/HeroStack.png");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 

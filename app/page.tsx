@@ -1,17 +1,38 @@
-import Image from "next/image";
-import About from "./components/about";
-import Hero from "./components/hero";
-import Navbar from "./components/navbar";
+'use client'
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+import About from './components/about';
+import Hero from './components/hero';
+import Navbar from './components/navbar';
+
 export default function Home() {
-  
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 640); // Adjust the breakpoint as needed
+    };
+
+    // Initial check on mount
+    handleResize();
+
+    // Attach event listener for resizing
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-   <>
-   <Navbar/>
-   <Hero/>
-
-    {/* <About /> */}
-    
+    <>
+      <Navbar />
+      {!isSmallScreen && <br />}
+      <Hero />
+      <br /><br /><br /><br /><br /><br />
+      {!isSmallScreen && <br />}
+      <About /> 
     </>
-
   );
 }
