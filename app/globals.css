@@ -31,3 +31,16 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Hero.css */
+
+.hero-text {
+  font-family: 'Montserrat', sans-serif;
+  /* Add any additional styles for your text */
+}
+
+.bg-design {
+  background:
+        #0F172A;
+}
+
