@@ -4,6 +4,8 @@ import Image from 'next/image';
 import About from './components/about';
 import Hero from './components/hero';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
+import { HoverImageLinks } from './components/linkHover';
 
 export default function Home() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -30,9 +32,11 @@ export default function Home() {
       <Navbar />
       {!isSmallScreen && <br />}
       <Hero />
-      <br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       {!isSmallScreen && <br />}
+      <HoverImageLinks/>
       <About /> 
+      <Footer/>
     </>
   );
 }

@@ -59,4 +59,13 @@ html {
 }
 
 
+.titleMain {
+  background-image: linear-gradient(#ffffff, #749bc5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  text-align: center;
+  font-weight: 500;
+}
 
