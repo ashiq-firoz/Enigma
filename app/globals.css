@@ -69,3 +69,23 @@ html {
   font-weight: 500;
 }
 
+
+
+.vibrate-container {
+  position: relative;
+  
+}
+
+.vibrate-img {
+  position: relative;
+  animation: vibrate 0.1s infinite linear;
+}
+
+@keyframes vibrate {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+}

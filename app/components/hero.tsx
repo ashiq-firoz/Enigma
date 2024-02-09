@@ -1,5 +1,6 @@
 import React from 'react';
 import '@fontsource/montserrat';
+import { motion } from "framer-motion";
 
 const Hero: React.FC = () => {
     const heroStyle: React.CSSProperties = {
@@ -17,18 +18,24 @@ const Hero: React.FC = () => {
     };
 
     return (
+        
         <section style={heroStyle}>
       <br /><br /><br /><br /><br /><br />
       {/* Your section content goes here */}
       {/* <img src="/HeroStack.png" alt="Hero Image" style={imageStyle} /> */}
-      <div className="titleMain text-5xl lg:text-[19rem] p-4 font-bold uppercase">
+      {/* <div className="titleMain text-5xl lg:text-[19rem] p-4 font-bold uppercase">
         ENIGMA
-      </div>
-      <br />
+      </div> */}
+      {/* <br /> */}
+     
+      <div className="vibrate-container">
+      <img src="/title.png" alt="ENIGMA" className='lg:h-{100} vibrate-img' />
+    </div>
       <center>
         <DrawOutlineButton>Let's Go</DrawOutlineButton>
       </center>
     </section>
+    
     );
 };
 
@@ -58,5 +65,30 @@ const DrawOutlineButton: React.FC<DrawOutlineButtonProps> = ({ children, ...rest
         </a>
     );
 };
+
+
+const FuzzyOverlay: React.FC = () => {
+    return (
+      <motion.div
+        initial={{ transform: "translateX(-10%) translateY(-10%)" }}
+        animate={{
+          transform: "translateX(10%) translateY(10%)",
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 0.2,
+          ease: "linear",
+          repeatType: "mirror",
+        }}
+        style={{
+          backgroundImage: 'url("/logo_fuzz.jpg")',
+          height: "1rem",
+          // backgroundImage: 'url("/noise.png")',
+        }}
+        className="pointer-events-none absolute -inset-[100%] opacity-[15%]"
+      />
+    );
+  };
+  
 
 export default Hero;

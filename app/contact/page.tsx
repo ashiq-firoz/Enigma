@@ -1,6 +1,7 @@
 import '../contact.css';
 import React, { ReactNode } from "react";
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 interface CardProps {
     children: ReactNode;
@@ -22,6 +23,7 @@ const Card: React.FC<CardProps> = ({ children }) => {
                     </div>
                 </div>
             </div>
+            
         </>
     );
 };
@@ -66,6 +68,7 @@ const Contact = () => {
                     </iframe>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }
