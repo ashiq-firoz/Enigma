@@ -1,15 +1,34 @@
 'use client'
+import React from 'react';
 import { useState } from 'react';
+import { getAuth, signOut } from 'firebase/auth';
+import { useRouter } from 'next/navigation';
+
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const auth = getAuth();
+  const router = useRouter();
+  const user = auth.currentUser;
+  console.log(user);
+  const logout=()=>{
+    signOut(auth).then(() => {
+      // Sign-out successful.
+      console.log("logged out");
+    }).catch((error) => {
+      console.log(error.message);
+    });
+    router.push("/login");
+  }
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+
   return (
-    <nav className="bg-[#0B0121] border-gray-200 hero-text">
+    <nav className="bg-[#0B0121] border-gray-200 hero-text relative z-10">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="/logo.jpg" className="h-8" alt="Flowbite Logo" />
@@ -71,11 +90,23 @@ export default function Navbar() {
               </a>
             </li>
 
-            <li>
-              <a className="bg-transparent hover:bg-blue-600 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                Login
-              </a>
-            </li>
+            {
+              user == null ?
+                <li>
+                  <a href="/login" className="bg-transparent hover:bg-blue-600 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    Login
+                  </a>
+                </li> :
+                <li>
+                  <a href="/login" onClick={logout} className="bg-transparent hover:bg-blue-600 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    Logout
+                  </a>
+                </li>
+            }
+            {/* onClick={setUser(false)} */}
+
+
+
           </ul>
         </div>
       </div>
