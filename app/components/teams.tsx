@@ -82,7 +82,7 @@ const Teams = () => {
                                     <img src="/img/ADITIRAWAT.jpg" alt="" className="w-full h-80 object-cover rounded-t-lg " onMouseEnter={handleHover} />
                                     <div>
                                         <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white py-3">ADITI RAWAT</h5>
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">Event Coordinator</span>
+                                        <span className="text-sm text-gray-500 dark:text-gray-400">Creative Lead</span>
                                     </div>
                                 </>
                             </Card>

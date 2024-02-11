@@ -29,13 +29,15 @@ export default function Home() {
 
   return (
     <>
+      
       <Navbar />
       {!isSmallScreen && <br />}
       <Hero />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br />
       {!isSmallScreen && <br />}
       <HoverImageLinks/>
       <About /> 
+      <br /><br /><br />
       <Footer/>
     </>
   );
