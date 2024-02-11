@@ -78,7 +78,7 @@ html {
 
 .vibrate-img {
   position: relative;
-  animation: vibrate 0.1s infinite linear;
+  animation: vibrate 0.2s infinite linear;
 }
 
 @keyframes vibrate {
@@ -88,4 +88,12 @@ html {
   50% {
     transform: translateX(-4px);
   }
+}
+
+
+#scrollSection {
+  height: 100vh; /* Set an initial height for the section */
+  background-size: cover;
+  background-position: center;
+  transition: height 0.5s ease; /* Add a smooth transition for height changes */
 }

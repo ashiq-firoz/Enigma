@@ -1,36 +1,38 @@
 import React from 'react';
 
+import { Fredericka_the_Great } from 'next/font/google'
+
+export const fredericka = Fredericka_the_Great({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400'
+});
+
 const About = () => {
-  const sectionStyle = {
-    backgroundImage: `url('/section.png')`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center center',
-    height: '800px',
-  };
+
 
   return (
-    <section style={sectionStyle} id="about" className="flex justify-center items-center">
-      <div className="grid grid-cols-2 lg:grid-cols-2 gap-5 p-2">
-        <div className="mb-4 px-8">
-          
-          <p>
-            Embark on a journey with Enigma IIITK - a dynamic space where data transforms into knowledge and ideas come to
-            life. From deciphering patterns to predicting the future, we explore the vast landscape of Artificial
-            Intelligence and Machine Learning. Join us in unravelling the mysteries, crafting solutions, and being at the
-            forefront of innovation.
+    <>
+    <section className="bg-white dark:bg-gray-900" id='about'>
+      <br /><br /> <br />
+      <div className='w-full h-screen  grid grid-cols-2 '>
+        <div className='flex flex-col justify-center w-full h-2/3 px-10 sm:text-6xl text-6xl sm:px-20'>
+          <img src="/enigmaMachine.png" alt="" className="rounded" />
+        </div>
+        <div className='col-span-1'>
+          <h1 className={` ${fredericka.className} py-6 text-white text-8xl`}>Peep Our Story</h1>
+          <p className={`${fredericka.className} text-white text-xl lg:text-3xl`}>
+          Our journey takes us back to the roots of AI, tracing the captivating tale of the Enigma Machine and the brilliant minds that cracked its code during World War II. Just like Alan Turing and his team, we're dedicated to pushing boundaries and exploring the uncharted territories of AI.
           </p>
         </div>
-        <div className="mb-4 px-8">
-          <p>
-            Embark on a journey with Enigma IIITK - a dynamic space where data transforms into knowledge and ideas come to
-            life. From deciphering patterns to predicting the future, we explore the vast landscape of Artificial
-            Intelligence and Machine Learning. Join us in unravelling the mysteries, crafting solutions, and being at the
-            forefront of innovation.
+        <div className='col-span-2 px-3'>
+        <p className={`${fredericka.className} text-white text-xl lg:text-3xl`}>
+          Our club transcends being a mere hub for AI/ML enthusiasts; it's a vibrant playground where you can immerse yourself in the sheer joy of experimenting with AI/ML technologies.
           </p>
         </div>
       </div>
     </section>
+    </>
   );
 };
 

@@ -3,8 +3,7 @@ import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <>
-    <br /><br />
+  
     <footer className="bg-design flex justify-between items-center p-4">
       <div>
         <p className="text-white">Enigma &copy;2024</p>
@@ -21,7 +20,7 @@ const Footer = () => {
         </a>
       </div>
     </footer>
-    </>
+
   );
 };
 
