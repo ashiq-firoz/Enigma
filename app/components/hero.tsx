@@ -3,7 +3,7 @@ import '@fontsource/montserrat';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
-  const [sectionHeight, setSectionHeight] = useState<number>(60);
+  const [sectionHeight, setSectionHeight] = useState<number>(87);
 
   const handleScroll = () => {
     const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
     <section className="bg-[url('/testbg2.png')]" id="scrollSection" style={heroStyle}>
       <center>
       <div className="vibrate-container">
-          <img src="/title.png" alt="ENIGMA" style={imageStyle} className="lg:h-[100px] vibrate-img" />
+          <img src="/title.png" alt="ENIGMA" style={imageStyle} className="lg:h-[100px] " />
         </div>
       </center>
       

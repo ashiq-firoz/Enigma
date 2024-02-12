@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({ children }) => {
                     </div>
                 </div>
             </div>
-            
+
         </>
     );
 };
@@ -59,16 +59,37 @@ const Contact = () => {
 
                 </div>
                 <div className="lg:w-[400] lg:col-span-2 p-2	">
-                    <iframe
-                        className='rounded w-[32rem] sm:w-400'
-                        src="https://docs.google.com/forms/d/e/1FAIpQLScihsq2UbJEx8ln9bpBUp0l8e-7vg6Y-t4mi-mHwQsBP4w-DQ/viewform?embedded=true"
-                        height="600"
-                    >
-                        Loading…
-                    </iframe>
+                    <div className="flex flex-col items-center justify-center h-screen dark">
+                        <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6">
+                            <h2 className="text-2xl font-bold text-gray-200 mb-4">Contact Us!</h2>
+
+                            <form className="flex flex-wrap">
+                                <input
+                                    type="email"
+                                    className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
+                                    placeholder="Email"
+                                />
+
+                                <textarea
+                                    name="message"
+                                    className="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-auto md:mb-auto md:w-full md:h-auto md:min-h-[100px] md:max-h-[100px] md:flex-grow md:flex-shrink md:flex-auto focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest"
+                                    placeholder="Message"
+                                ></textarea>
+                                <button className="border hover:scale-95 duration-300 relative group cursor-pointer text-sky-50  overflow-hidden h-16 w-64 rounded-md bg-sky-200 p-2 flex justify-center items-center font-extrabold">
+
+                                    <div className="absolute right-32 -top-4  group-hover:top-1 group-hover:right-2 z-10 w-40 h-40 rounded-full group-hover:scale-150 duration-500 bg-sky-900"></div>
+                                    <div className="absolute right-2 -top-4  group-hover:top-1 group-hover:right-2 z-10 w-32 h-32 rounded-full group-hover:scale-150  duration-500 bg-sky-800"></div>
+                                    <div className="absolute -right-12 top-4 group-hover:top-1 group-hover:right-2 z-10 w-24 h-24 rounded-full group-hover:scale-150  duration-500 bg-sky-700"></div>
+                                    <div className="absolute right-20 -top-4 group-hover:top-1 group-hover:right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150  duration-500 bg-sky-600"></div>
+                                    <p className="z-10">Submit</p>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     );
 }

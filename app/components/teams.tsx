@@ -1,186 +1,102 @@
 'use client'
-import React, { useState, ReactNode } from "react";
+import React from "react";
+import "../Teams.css"; 
 
-interface CardProps {
-    children: ReactNode;
-}
+import { Rubik_Moonrocks} from 'next/font/google'
 
-
+export const rubick = Rubik_Moonrocks({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400'
+});
 
 const Teams = () => {
-    const [count, setCount] = useState(0);
-
-    const handleHover = () => {
-        let counter = 0;
-        const interval = setInterval(() => {
-            if (counter === 10) {
-                counter = 110;
-            }
-            if (counter <= 110) {
-                setCount(counter);
-                counter++;
-            } else {
-                clearInterval(interval);
-            }
-        }, 20);
-    };
-
     return (
-        <>
-            <br />
-            <div className="text-center">
-                <h2 className="text-white text-3xl">Club Leads</h2>
-                <section className="px-4">
-                    <div className="flex justify-center py-3 ">
-                        <div className="grid grid-cols-2 gap-8">
-                            
-                            <Card>
-                                <>
-                                    <img src="/img/TANYAGUPTA.jpg" alt="" className="w-full h-80 object-cover rounded-t-lg" onMouseEnter={handleHover} />
-
-                                    <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white py-3">TANYA GUPTA</h5>
-                                    <span className="text-sm text-gray-500 dark:text-gray-400">Club Lead</span>
-                                </>
-                            </Card>
-                            <Card>
-                                <>
-                                    <img src="/img/ADITYAUBALIGA.png" alt="" className="w-full h-80 object-cover rounded-t-lg " onMouseEnter={handleHover} />
-                                    <div>
-                                        <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white py-3">ADITYA U BALIGA</h5>
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">Club Lead</span>
-                                    </div>
-                                </>
-                            </Card>
+        <section>
+            <div className="container py-16 mx-auto px-16">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+                    <div className="col-span-1 row-span-2 relative">
+                        <img
+                            src="/img/TANYAGUPTA.jpg"
+                            alt="Your Image"
+                            className="w-full h-[70vh] object-cover rounded-md"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
+                            <p className={`${rubick.className} text-white`}>CLUB LEAD</p>
+                            <p className="text-white">TANYA GUPTA</p>
                         </div>
-
-                        
-                        
                     </div>
-                </section>
-                <section className="px-4">
-                    <div className="flex justify-center py-3">
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                            <Card>
-                                <>
-                                    <img src="/img/AKHILESHNEKAR.jpg" alt="" className="w-full h-80 object-cover rounded-t-lg" onMouseEnter={handleHover} />
-
-                                    <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white py-3">AKHILESH NEKAR</h5>
-                                    <span className="text-sm text-gray-500 dark:text-gray-400">Techical Lead</span>
-                                </>
-                            </Card>
-                            <Card>
-                                <>
-                                    <img src="/img/MARIPALLYAMOGH.jpg" alt="" className="w-full h-80 object-cover rounded-t-lg " onMouseEnter={handleHover} />
-                                    <div>
-                                        <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white py-3">MARIPALLY AMOGH</h5>
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">Reasearch Lead</span>
-                                    </div>
-                                </>
-                            </Card>
-                            <Card>
-                                <>
-                                    <img src="/img/ADITIRAWAT.jpg" alt="" className="w-full h-80 object-cover rounded-t-lg " onMouseEnter={handleHover} />
-                                    <div>
-                                        <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white py-3">ADITI RAWAT</h5>
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">Creative Lead</span>
-                                    </div>
-                                </>
-                            </Card>
+                    <div className="col-span-1 lg:col-span-1 row-span-1 relative">
+                        <img
+                            src="/img/AKHILESHNEKAR2.jpg"
+                            alt="Your Image"
+                            className="w-full h-[35vh] object-cover rounded-md"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
+                            <p className={`${rubick.className} text-white`}>TECH LEAD</p>
+                            <p className="text-white">AKHILESH NEKAR</p>
                         </div>
-
-                        
-                        
                     </div>
-                </section>
-
-                <section className="px-4">
-                    <div className="flex justify-center py-5">
-                        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-                            <Card>
-                                <>
-                                    <img src="/logo.jpg" alt="" className="w-full h-80 object-cover rounded-t-lg" onMouseEnter={handleHover} />
-
-                                    <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white py-3">Bonnie Green</h5>
-                                    <span className="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
-                                </>
-                            </Card>
-                            <Card>
-                                <>
-                                    <img src="/logo.jpg" alt="" className="w-full h-80 object-cover rounded-t-lg " onMouseEnter={handleHover} />
-                                    <div>
-                                        <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white py-3">Bonnie Green</h5>
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
-                                    </div>
-                                </>
-                            </Card>
-                            <Card>
-                                <>
-                                    <img src="/logo.jpg" alt="" className="w-full h-80 object-cover rounded-t-lg " onMouseEnter={handleHover} />
-                                    <div>
-                                        <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white py-3">Bonnie Green</h5>
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
-                                    </div>
-                                </>
-                            </Card>
-                            <Card>
-                                <>
-                                    <img src="/logo.jpg" alt="" className="w-full h-80 object-cover rounded-t-lg " onMouseEnter={handleHover} />
-                                    <div>
-                                        <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white py-3">Bonnie Green</h5>
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
-                                    </div>
-                                </>
-                            </Card>
+                    <div className="col-span-1 lg:col-span-1 row-span-1 relative">
+                        <img
+                            src="/img/me2.jpg"
+                            alt="Your Image"
+                            className="w-full h-[32vh] object-cover rounded-md"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
+                            <p className={`${rubick.className} text-white`}>TECH LEAD</p>
+                            <p className="text-white">ASHIQ FIROZ</p>
                         </div>
-
-                        
-                        
                     </div>
-                </section>
+                    
+                    <div className=" w-full col-span-2 row-span-2 relative">
+                        <img
+                            src="/img/ADITYAUBALIGA.png"
+                            alt="Your Image"
+                            className="w-full h-[80vh] object-cover rounded-md"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
+                            <p className={`${rubick.className} text-white`}>CLUB LEAD</p>
+                            <p className="text-white">ADITYA U BALIGA</p>
+                        </div>
+                    </div>
+                    <div className="col-span-1 row-span-1 relative">
+                        <img
+                            src="/img/MARIPALLYAMOGH.jpg"
+                            alt="Your Image"
+                            className="w-full h-[30vh] object-cover rounded-md"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
+                            <p className={`${rubick.className} text-white`}>REASEARCH LEAD</p>
+                            <p className="text-white">MARIPALLY AMOGH</p>
+                        </div>
+                    </div>
+                    <div className="col-span-1 row-span-1 relative">
+                        <img
+                            src="/img/ADITIRAWAT.jpg"
+                            alt="Your Image"
+                            className="w-full h-[40vh] object-cover rounded-md"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
+                            <p className={`${rubick.className} text-white`}>CREATIVE LEAD</p>
+                            <p className="text-white">ADITI RAWAT</p>
+                        </div>
+                    </div>
+                    <div className="col-span-1 row-span-1 relative">
+                        <img
+                            src="/img/gautham.jpg"
+                            alt="Your Image"
+                            className="w-full h-[35vh] object-cover rounded-md"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
+                            <p className={`${rubick.className} text-white`}>DESIGN LEAD</p>
+                            <p className="text-white">GUTHAM SURESH</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </>
-    );
-}
-
-
-const Card: React.FC<CardProps> = ({ children }) => {
-    // const cardStyle: React.CSSProperties = {
-    //     backgroundImage: 'url("/bggif.gif")', // Replace with the path to your GIF
-    //     backgroundSize: 'cover',
-    //   };
-    return (
-        // use this style in the below div for gif effect : style={cardStyle}
-         
-        <div className="hover:transform hover:scale-105 origin-top   max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-shadow duration-300 hover:bg-gradient-to-b from-violet-600 to-[#1d4ed8] ">
-  <div className="flex flex-col items-center pb-10">
-    {children}
-  </div>
-</div>
-
+        </section>
     );
 };
-
-interface Card2Props {
-    title: string;
-    subtitle: string;
-    Icon: React.FC<React.SVGProps<SVGSVGElement>>;
-    href: string;
-  }
-  
-  const Card2: React.FC<Card2Props> = ({ title, subtitle, Icon, href }) => {
-    return (
-      <a
-        
-        className="w-full p-4 rounded border-[1px] border-slate-300 relative overflow-hidden group bg-white"
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-indigo-600 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-800" />
-  
-        <h3 className="font-medium text-lg text-slate-950 group-hover:text-white relative z-10 duration-300">
-          {title}
-        </h3>
-        
-      </a>
-    );
-  };
 
 export default Teams;
