@@ -36,6 +36,7 @@ export default function Home() {
       <br /><br />
       {!isSmallScreen && <br />}
       <HoverImageLinks/>
+      <br />
       <About /> 
       <br /><br /><br />
       <Footer/>

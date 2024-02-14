@@ -20,7 +20,7 @@ const About = () => {
           <img src="/enigmaMachine.png" alt="" className="rounded" />
         </div>
         <div className='col-span-1'>
-          <h1 className={` ${fredericka.className} py-6 text-white text-8xl`}>Peep Our Story</h1>
+          <h1 className={` ${fredericka.className} py-6 text-white text-5xl lg:text-8xl`}>Peep Our Story</h1>
           <p className={`${fredericka.className} text-white text-xl lg:text-3xl`}>
           Our journey takes us back to the roots of AI, tracing the captivating tale of the Enigma Machine and the brilliant minds that cracked its code during World War II. Just like Alan Turing and his team, we're dedicated to pushing boundaries and exploring the uncharted territories of AI.
           </p>

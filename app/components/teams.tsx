@@ -26,7 +26,7 @@ const Teams = () => {
                             <p className="text-white">TANYA GUPTA</p>
                         </div>
                     </div>
-                    <div className="col-span-1 lg:col-span-1 row-span-1 relative">
+                    <div className="col-span-2 lg:col-span-1 row-span-1 relative">
                         <img
                             src="/img/AKHILESHNEKAR2.jpg"
                             alt="Your Image"
@@ -37,7 +37,7 @@ const Teams = () => {
                             <p className="text-white">AKHILESH NEKAR</p>
                         </div>
                     </div>
-                    <div className="col-span-1 lg:col-span-1 row-span-1 relative">
+                    <div className="col-span-2 lg:col-span-1 row-span-1 relative">
                         <img
                             src="/img/me2.jpg"
                             alt="Your Image"
@@ -49,7 +49,7 @@ const Teams = () => {
                         </div>
                     </div>
                     
-                    <div className=" w-full col-span-2 row-span-2 relative">
+                    <div className=" w-full col-span-3 lg:col-span-2 row-span-2 relative">
                         <img
                             src="/img/ADITYAUBALIGA.png"
                             alt="Your Image"
@@ -73,7 +73,7 @@ const Teams = () => {
                     </div>
                     <div className="col-span-1 row-span-1 relative">
                         <img
-                            src="/img/ADITIRAWAT.jpg"
+                            src="/img/ADITIRAWAT2.jpg"
                             alt="Your Image"
                             className="w-full h-[40vh] object-cover rounded-md"
                         />
