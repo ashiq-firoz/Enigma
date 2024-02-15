@@ -24,9 +24,9 @@ const About = () => {
               )}
             </div>
          
-          <div className='col-span-1'>
-            <h1 className={` ${fredericka.className} py-6 text-white text-5xl lg:text-8xl`}>Peep Our Story</h1>
-            <p className={`${fredericka.className} text-white text-xl lg:text-3xl`}>
+          <div className='col-span-2 lg:col-span-1'>
+            <h1 className={` ${fredericka.className} py-6 px-2 text-white text-5xl lg:text-8xl`}>Peep Our Story</h1>
+            <p className={`${fredericka.className} text-white text-xl lg:text-3xl px-2`}>
               Our journey takes us back to the roots of AI, tracing the captivating tale of the Enigma Machine and the brilliant minds that cracked its code during World War II. Just like Alan Turing and his team, we're dedicated to pushing boundaries and exploring the uncharted territories of AI.
             </p>
           </div>
