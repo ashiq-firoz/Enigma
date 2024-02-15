@@ -18,10 +18,10 @@ const About = () => {
         <br /><br /> <br />
         <div className='w-full h-screen  grid grid-cols-2 '>
           
-            <div className='flex flex-col justify-center w-full h-2/3 px-10 sm:text-6xl text-6xl sm:px-20'>
-            {!isSmallScreen && (
-              <img src="/enigmaMachine.png" alt="" className="rounded h-[50vh] lg:h-[80vh] w-full" />
-              )}
+            <div className='flex flex-col justify-center w-full lg :h-2/3 px-10 sm:text-6xl text-6xl sm:px-20'>
+            
+              <img src="/enigmaMachine.png" alt="" className="invisible lg:visible rounded lg:h-[80vh] w-full" />
+              
             </div>
          
           <div className='col-span-2 lg:col-span-1'>
