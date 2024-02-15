@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import "../Teams.css"; 
+
 
 import { Rubik_Moonrocks} from 'next/font/google'
 
