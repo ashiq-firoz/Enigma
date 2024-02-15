@@ -10,7 +10,7 @@
 /coverage
 /temp
 /temp2
-.env
+#add .env
 
 # next.js
 /.next/

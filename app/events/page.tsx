@@ -1,12 +1,16 @@
 'use client'
 import React from "react";
 import { motion } from "framer-motion";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const Error404: React.FC = () => {
   return (
     <div className="relative overflow-hidden">
+        <Navbar/>
       <ExampleContent />
       <FuzzyOverlay />
+      <Footer/>
     </div>
   );
 };
@@ -37,10 +41,10 @@ const ExampleContent: React.FC = () => {
   return (
     <div className="relative grid h-screen place-content-center space-y-6 bg-neutral-950 p-8">
       <p className="text-center text-6xl font-black text-neutral-50">
-        Uh ooh Error....
+        Events Loading...
       </p>
       <p className="text-center text-neutral-400">
-      
+        Something Cooking📺
       </p>
       
     </div>
