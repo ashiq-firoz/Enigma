@@ -67,7 +67,7 @@ const Teams = () => {
                             className="w-full h-[30vh] object-cover rounded-md"
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
-                            <p className={`${rubick.className} text-white`}>REASEARCH LEAD</p>
+                            <p className={`${rubick.className} text-white`}>RESEARCH LEAD</p>
                             <p className="text-white">MARIPALLY AMOGH</p>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ const Teams = () => {
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
                             <p className={`${rubick.className} text-white`}>DESIGN LEAD</p>
-                            <p className="text-white">GUTHAM SURESH</p>
+                            <p className="text-white">GAUTHAM SURESH</p>
                         </div>
                     </div>
                 </div>

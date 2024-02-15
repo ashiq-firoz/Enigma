@@ -15,7 +15,8 @@ const About = () => {
   return (
     <>
       <section className="bg-white dark:bg-gray-900" id='about'>
-        <br /><br /> <br />
+        <br /><br /> <br />+
+        
         <div className='w-full h-screen  grid grid-cols-2 '>
           
             <div className='flex flex-col justify-center w-full lg :h-2/3 px-10 sm:text-6xl text-6xl sm:px-20'>
