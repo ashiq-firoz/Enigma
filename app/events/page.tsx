@@ -43,9 +43,7 @@ const ExampleContent: React.FC = () => {
       <p className="text-center text-6xl font-black text-neutral-50">
         Events Loading...
       </p>
-      <p className="text-center text-neutral-400">
-        Something Cooking📺
-      </p>
+     
       
     </div>
   );

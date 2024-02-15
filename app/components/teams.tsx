@@ -33,7 +33,7 @@ const Teams = () => {
                             className="w-full h-[35vh] object-cover rounded-md"
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
-                            <p className={`${rubick.className} text-white`}>TECH LEAD</p>
+                            <p className={`${rubick.className} text-white`}>PR LEAD</p>
                             <p className="text-white">AKHILESH NEKAR</p>
                         </div>
                     </div>

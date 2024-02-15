@@ -24,7 +24,7 @@ export const HoverImageLinks = () => {
           heading="Events"
           subheading="Incase you're bored"
           imgSrc="/random/10.jpg"
-          href="#"
+          href="/events"
         />
       </div>
     </section>

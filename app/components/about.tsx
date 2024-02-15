@@ -17,7 +17,7 @@ const About = () => {
       <br /><br /> <br />
       <div className='w-full h-screen  grid grid-cols-2 '>
         <div className='flex flex-col justify-center w-full h-2/3 px-10 sm:text-6xl text-6xl sm:px-20'>
-          <img src="/enigmaMachine.png" alt="" className="rounded" />
+          <img src="/enigmaMachine.png" alt="" className="rounded h-[50vh] lg:h-[80vh] w-full" />
         </div>
         <div className='col-span-1'>
           <h1 className={` ${fredericka.className} py-6 text-white text-5xl lg:text-8xl`}>Peep Our Story</h1>
