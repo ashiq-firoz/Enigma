@@ -41,7 +41,7 @@ const ExampleContent: React.FC = () => {
   return (
     <div className="relative grid h-screen place-content-center space-y-6 bg-neutral-950 p-8">
       <p className="text-center text-6xl font-black text-neutral-50">
-        Events Loading...
+        Events Page Under Construction...
       </p>
      
       
