@@ -3,13 +3,16 @@ import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import CurrentEvent from "../components/currentEvent";
+import PinnedSection from "../components/PinnedSection";
 
 const Error404: React.FC = () => {
   return (
     <div className="relative overflow-hidden">
-        <Navbar/>
-      <ExampleContent />
-      <FuzzyOverlay />
+      <Navbar/>
+      <CurrentEvent/>
+      <hr />
+      <PinnedSection/>
       <Footer/>
     </div>
   );
