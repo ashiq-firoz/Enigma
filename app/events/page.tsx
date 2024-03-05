@@ -5,6 +5,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import CurrentEvent from "../components/currentEvent";
 import PinnedSection from "../components/PinnedSection";
+import EventsList from "../components/EventList";
 
 const Error404: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Error404: React.FC = () => {
       <CurrentEvent/>
       <hr />
       <PinnedSection/>
+      <EventsList/>
       <Footer/>
     </div>
   );

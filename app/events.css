@@ -17,3 +17,18 @@
     border-radius: 8px; /* Adjust the radius as needed */
   }
   
+
+.scrolling {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.scrolling::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrolling::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
