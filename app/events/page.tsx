@@ -6,15 +6,24 @@ import Footer from "../components/footer";
 import CurrentEvent from "../components/currentEvent";
 import PinnedSection from "../components/PinnedSection";
 import EventsList from "../components/EventList";
+import NavBar2 from "../components/navbar2";
+import Carousel from "../components/carousel";
+
+
 
 const Error404: React.FC = () => {
   return (
     <div className="relative overflow-hidden">
-      <Navbar/>
-      <CurrentEvent/>
+      <NavBar2/>
+      <Carousel/>
+      {/* <CurrentEvent/>
       <hr />
       <PinnedSection/>
-      <EventsList/>
+      <EventsList/> */}
+     
+
+      
+     
       <Footer/>
     </div>
   );

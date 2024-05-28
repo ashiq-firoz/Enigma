@@ -1,6 +1,7 @@
 import { Teko} from 'next/font/google'
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import NavBar2 from '../components/navbar2';
 
 export const kanit = Teko({
     subsets: ['latin'],
@@ -11,7 +12,7 @@ export const kanit = Teko({
 const People = ()=>{
     return (
         <>
-        <Navbar/>
+        <NavBar2/>
         
         
         <section>
@@ -72,13 +73,13 @@ const People = ()=>{
                     </div> 
                     <div className="col-span-1 lg:col-span-1 row-span-1 relative">
                         <img
-                            src="/patrons/cinu.jpg"
+                            src="/patrons/lincy.jpeg"
                             alt="Your Image"
                             className="w-full h-[40vh] object-cover rounded-md"
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
                             <p className={`${kanit.className} text-white`}>Assistant Professor IIIT Kottayam</p>
-                            <p className="text-white">Dr. Cinu C Kiliroor</p>
+                            <p className="text-white">Dr. Rubell Marion Lincy G</p>
                         </div>
                     </div> 
                     <div className="col-span-1 lg:col-span-1 row-span-1 relative">
@@ -94,13 +95,13 @@ const People = ()=>{
                     </div> 
                     <div className="col-span-1 lg:col-span-1 row-span-1 relative">
                         <img
-                            src="/patrons/lincy.jpeg"
+                            src="/patrons/cinu.jpg"
                             alt="Your Image"
                             className="w-full h-[40vh] object-cover rounded-md"
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
-                            <p className={`${kanit.className} text-white`}>HOD(Computer Science & Engineering-2) IIIT Kottayam</p>
-                            <p className="text-white">Dr. Rubell Marion Lincy G</p>
+                            <p className={`${kanit.className} text-white`}>Assistant Professor IIIT Kottayam</p>
+                            <p className="text-white">Dr. Cinu C Kiliroor</p>
                         </div>
                     </div> 
                 </div>

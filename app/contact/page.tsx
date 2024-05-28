@@ -4,6 +4,8 @@ import React, { ReactNode } from "react";
 // Import components
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import NavBar2 from '../components/navbar2';
+import { SignupFormDemo } from '../components/contactform';
 
 // Card component props
 interface CardProps {
@@ -34,9 +36,9 @@ const Card: React.FC<CardProps> = ({ children }) => {
 const Contact = () => {
     return (
         <>
-            <Navbar />
+            <NavBar2 />
             <div className='p-2'>
-                <center><h2>Contact Us</h2></center>
+                
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-4'>
                 <div className='p-8 col-span-2 lg:flex'>
@@ -60,7 +62,8 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="lg:w-[400] lg:col-span-2 p-2">
-                    <div className="flex flex-col items-center justify-center h-screen dark">
+                    <SignupFormDemo/>
+                    {/* <div className="flex flex-col items-center justify-center h-screen dark">
                         <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6">
                             <h2 className="text-2xl font-bold text-gray-200 mb-4">Contact Us!</h2>
 
@@ -86,7 +89,7 @@ const Contact = () => {
                                 </button>
                             </form>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <Footer />

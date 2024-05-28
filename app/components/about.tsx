@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <>
-      <section className="bg-white dark:bg-gray-900" id='about'>
+      <section className="" id='about'>
         <br /><br /> <br />+
         
         <div className='w-full h-screen  grid grid-cols-2 '>

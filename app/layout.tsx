@@ -19,12 +19,12 @@ export default function RootLayout({
  
 
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <Head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
         
       </Head>
-      <body className={`${inter.className} bg-design`}>
+      <body className={`${inter.className} `}>
       <AuthContextProvider>
           {children}
         </AuthContextProvider>
