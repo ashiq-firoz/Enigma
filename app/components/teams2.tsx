@@ -1,12 +1,6 @@
 import { cn } from "../utils/cn";
 import React from "react";
 
-import {
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid1";
 
 export default function BentoGridSecondDemo() {
@@ -19,7 +13,7 @@ export default function BentoGridSecondDemo() {
           description={item.description}
           header={item.header}
           className={item.className}
-          icon={item.icon}
+          icon=""
         />
       ))}
     </BentoGrid>
@@ -30,68 +24,68 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
+    title: "TANYA GUPTA",
+    description: "Club Lead.",
+    header: <img src="/img/TANYAGUPTA.jpg" alt="tanya" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl" />,
     className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
+    title: "ADITYA BALIGA",
+    description: "Club Lead",
+    header:  <img src="/img/ADITYAUBALIGA.png" alt="aditya" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl" />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
+    title: "ASHIQ FIROZ",
+    description: "Tech Lead",
+    header:  <img src="/img/me.jpg" alt="me" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl" />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
+    title: "SriHarsha Bodicherla",
+    description: "Tech Lead",
+    header:  <img src="/img/HARSHA.png" alt="Harsha" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl" />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    
   },
   {
-    title: "The Power of Communication",
+    title: "AKHILESH NEKAR",
     description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
+      "PR Lead",
+    header:  <img src="/img/AKHILESHNEKAR.jpg" alt="akhilesh" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl" />,
     className: "md:col-span-1",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
+    title: "Amogh M",
+    description: "Research Lead",
+    header:  <img src="/img/MARIPALLYAMOGH.jpg" alt="AMOUGH" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl" />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
+    title: "GAUTHAM SURESH",
+    description: "Design Lead.",
+    header:  <img src="/img/gautham.jpg" alt="gautham" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl" />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+   
   },
   {
-    title: "The Power of Communication",
+    title: "Aditi Rawat",
     description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
+      "Creative Lead",
+    header:  <img src="/img/ADITIRAWAT2.jpg" alt="aditi" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl" />,
     className: "md:col-span-1",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+   
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
+    title: "Allu Sumasree",
+    description: "PR Lead",
+    header:  <img src="/img/SUMASRI.jpg" alt="suma" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl" />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    
   },
 ];

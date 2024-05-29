@@ -1,6 +1,5 @@
 'use client'
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import CurrentEvent from "../components/currentEvent";
@@ -8,59 +7,48 @@ import PinnedSection from "../components/PinnedSection";
 import EventsList from "../components/EventList";
 import NavBar2 from "../components/navbar2";
 import Carousel from "../components/carousel";
+import ImageStack from "../components/sm_carousel";
 
+const Page: React.FC = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 640); // Adjust the breakpoint as needed
+    };
 
-const Error404: React.FC = () => {
+    // Initial check on mount
+    handleResize();
+
+    // Attach event listener for resizing
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className="relative overflow-hidden">
-      <NavBar2/>
-      <Carousel/>
+      <NavBar2 />
+
+      {!isSmallScreen ? (
+        <Carousel />
+      ) : (
+        <ImageStack/>
+      )}
+
       {/* <CurrentEvent/>
       <hr />
       <PinnedSection/>
       <EventsList/> */}
-     
 
-      
+      <div className="h-[20vh]">&nbsp;</div>
      
-      <Footer/>
+      <Footer />
     </div>
   );
 };
 
-const FuzzyOverlay: React.FC = () => {
-  return (
-    <motion.div
-      initial={{ transform: "translateX(-10%) translateY(-10%)" }}
-      animate={{
-        transform: "translateX(10%) translateY(10%)",
-      }}
-      transition={{
-        repeat: Infinity,
-        duration: 0.2,
-        ease: "linear",
-        repeatType: "mirror",
-      }}
-      style={{
-        backgroundImage: 'url("/error.jpg")',
-        // backgroundImage: 'url("/noise.png")',
-      }}
-      className="pointer-events-none absolute -inset-[100%] opacity-[15%]"
-    />
-  );
-};
-
-const ExampleContent: React.FC = () => {
-  return (
-    <div className="relative grid h-screen place-content-center space-y-6 bg-neutral-950 p-8">
-      <p className="text-center text-6xl font-black text-neutral-50">
-        Events Page Under Construction...
-      </p>
-     
-      
-    </div>
-  );
-};
-
-export default Error404;
+export default Page;

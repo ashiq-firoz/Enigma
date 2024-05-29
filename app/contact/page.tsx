@@ -6,6 +6,8 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import NavBar2 from '../components/navbar2';
 import { SignupFormDemo } from '../components/contactform';
+import { BentoGrid, BentoGridItem } from '../components/ui/bento-grid1';
+import { IconClipboardCopy, IconFileBroken, IconSignature, IconTableColumn } from '@tabler/icons-react';
 
 // Card component props
 interface CardProps {
@@ -38,31 +40,25 @@ const Contact = () => {
         <>
             <NavBar2 />
             <div className='p-2'>
-                
+
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-4'>
                 <div className='p-8 col-span-2 lg:flex'>
-                    <div className="lg:w-1/2 p-2">
-                        <Card>
-                            <img
-                                className="w-full h-80 object-cover rounded-t-lg"
-                                src="/img/TANYAGUPTA.jpg"
-                                alt="Card Image"
+                    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+                        {items.map((item, i) => (
+                            <BentoGridItem
+                                key={i}
+                                title={item.title}
+                                description={item.description}
+                                header={item.header}
+                                className={item.className}
+                                icon=""
                             />
-                        </Card>
-                    </div>
-                    <div className="lg:w-1/2 p-2">
-                        <Card>
-                            <img
-                                className="w-full h-80 object-cover rounded-t-lg"
-                                src="/img/ADITYAUBALIGA.png"
-                                alt="Card Image"
-                            />
-                        </Card>
-                    </div>
+                        ))}
+                    </BentoGrid>
                 </div>
                 <div className="lg:w-[400] lg:col-span-2 p-2">
-                    <SignupFormDemo/>
+                    <SignupFormDemo />
                     {/* <div className="flex flex-col items-center justify-center h-screen dark">
                         <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6">
                             <h2 className="text-2xl font-bold text-gray-200 mb-4">Contact Us!</h2>
@@ -96,5 +92,34 @@ const Contact = () => {
         </>
     );
 }
+
+const Skeleton = () => (
+    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black">
+        
+    </div>
+  );
+  const items = [
+    {
+        title: "",
+        description: "",
+        header: <div className="text-7xl tracking-[.25em] py-28 px-4"><b>EN</b></div>,
+        className: "md:col-span-1",
+       
+      },
+    {
+        title: "",
+        description: "",
+        header: <span className='text-7xl tracking-[.25em] py-28 px-4'><b>IG</b></span>,
+        className: "md:col-span-1",
+    },
+    {
+        title: "",
+        description: "",
+        header: <span className='text-7xl tracking-[.25em] py-28 '><b>MA</b></span>,
+        className: "md:col-span-1",
+    },
+   
+  ];
+  
 
 export default Contact;
