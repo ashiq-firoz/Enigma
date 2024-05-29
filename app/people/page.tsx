@@ -3,7 +3,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import NavBar2 from '../components/navbar2';
 
-export const kanit = Teko({
+const teko = Teko({
     subsets: ['latin'],
     display: 'swap',
     weight: '700'
@@ -29,7 +29,7 @@ const People = ()=>{
                             className="w-full h-[40vh] object-cover rounded-md"
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
-                            <p className={`${kanit.className} text-white`}>DIRECTOR IIIT Kottayam</p>
+                            <p className={`${teko.className} text-white`}>DIRECTOR IIIT Kottayam</p>
                             <p className="text-white">Dr. Rajiv V. Dharaskar</p>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ const People = ()=>{
                             className="w-full h-[40vh] object-cover rounded-md"
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
-                            <p className={`${kanit.className} text-white`}>REGISTRAR IIIT Kottyam</p>
+                            <p className={`${teko.className} text-white`}>REGISTRAR IIIT Kottyam</p>
                             <p className="text-white">Dr. M. Radhakrishnan</p>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ const People = ()=>{
                             className="w-full h-[40vh] object-cover rounded-md"
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
-                            <p className={`${kanit.className} text-white`}>PIC-Academics IIIT Kottayam</p>
+                            <p className={`${teko.className} text-white`}>PIC-Academics IIIT Kottayam</p>
                             <p className="text-white">Prof P. Mohanan</p>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const People = ()=>{
                             className="w-full h-[40vh] object-cover rounded-md"
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
-                            <p className={`${kanit.className} text-white`}>Associate Dean IIIT Kottayam</p>
+                            <p className={`${teko.className} text-white`}>Associate Dean IIIT Kottayam</p>
                             <p className="text-white">Dr. Ebin Deni Raj</p>
                         </div>
                     </div> 
@@ -78,7 +78,7 @@ const People = ()=>{
                             className="w-full h-[40vh] object-cover rounded-md"
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
-                            <p className={`${kanit.className} text-white`}>Assistant Professor IIIT Kottayam</p>
+                            <p className={`${teko.className} text-white`}>Assistant Professor IIIT Kottayam</p>
                             <p className="text-white">Dr. Rubell Marion Lincy G</p>
                         </div>
                     </div> 
@@ -89,7 +89,7 @@ const People = ()=>{
                             className="w-full h-[40vh] object-cover rounded-md"
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
-                            <p className={`${kanit.className} text-white`}>HOD (Computer Science & Engineering-1) IIIT Kottayam</p>
+                            <p className={`${teko.className} text-white`}>HOD (Computer Science & Engineering-1) IIIT Kottayam</p>
                             <p className="text-white">Dr. Jayakrushna Sahoo</p>
                         </div>
                     </div> 
@@ -100,7 +100,7 @@ const People = ()=>{
                             className="w-full h-[40vh] object-cover rounded-md"
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">
-                            <p className={`${kanit.className} text-white`}>Assistant Professor IIIT Kottayam</p>
+                            <p className={`${teko.className} text-white`}>Assistant Professor IIIT Kottayam</p>
                             <p className="text-white">Dr. Cinu C Kiliroor</p>
                         </div>
                     </div> 
